@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/innerpg_bg"
+    android:orientation="vertical"
+    tools:context="com.example.user.timothysurvey.activity.Questions">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#42474b"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <ImageView
+                android:id="@+id/toolbarlogo"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:layout_marginRight="200dp"
+                android:src="@mipmap/toolbarlogo" />
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="Please answer all the questions.Showing 1 of 8"
+        android:textColor="#494e51"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#494e51"
+                android:padding="7dp"
+                android:text="Which is the most important quality of leadership according to your opinion?"
+                android:textColor="#fff"
+                android:textSize="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+                
+                <ImageView
+                    android:layout_width="10dp"
+                    android:adjustViewBounds="true"
+                    android:layout_height="wrap_content"
+                    android:alpha="0.67"
+                    android:src="@mipmap/leftblock"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:alpha="0.4"
+                    android:background="#B8DBC9"
+                    android:layout_height="420dp"/>
+                <ImageView
+                    android:layout_width="10dp"
+                    android:adjustViewBounds="true"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="9dp"
+                    android:alpha="0.67"
+                    android:src="@mipmap/rightblock"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/previous"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:background="#e7ad01"
+            android:src="@mipmap/left" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="60"
+            android:background="#494e51" />
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:background="#e7ad01"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="Next"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+</LinearLayout>

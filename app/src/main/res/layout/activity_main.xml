@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/innerpg_bg"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#42474b"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            <ImageView
+                android:id="@+id/toolbarlogo"
+                android:src="@mipmap/toolbarlogo"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="200dp"
+                android:layout_height="46dp"
+                 />
+        </android.support.v7.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/deadline"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#494e51"
+            android:gravity="center_vertical"
+            android:paddingLeft="40dp"
+            android:textSize="10dp"
+            android:textColor="#fff"
+            android:text="The Ongoing survey closes on Dec 31,2016 at 2:00pm GMT"
+            />
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabMode="fixed" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</android.support.design.widget.CoordinatorLayout>
