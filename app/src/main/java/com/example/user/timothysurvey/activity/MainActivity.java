@@ -128,12 +128,11 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
     @Override
     public void onPageSelected(int position) {
 
-        //This method will be invoked when a new page becomes selected.set your visiblity here with respect to tab
         if( position == 0){
             deadLine.setVisibility(View.VISIBLE);
         }
         else if(position == 1){
-            deadLine.setVisibility(View.GONE);
+            deadLine.setText("The Next Survey Opens at Dec 31,2016 at 2:00pm GMT");
         }
         else if(position == 2){
             deadLine.setVisibility(View.GONE);
